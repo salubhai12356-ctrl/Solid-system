@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6hjydpnm4k2r7bv"]
+
+[ext_resource type="Script" path="res://scripts/GameManager.gd" id="1_ab3nc"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ab3nc")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 540.0
+offset_bottom = 960.0
+color = Color(0.1, 0.1, 0.15, 1)
+
+[node name="UIManager" type="Node" parent="."]
+
+[node name="ScoreLabel" type="Label" parent="UIManager"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 60.0
+text = "Score: 0"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="LevelLabel" type="Label" parent="UIManager"]
+offset_left = 320.0
+offset_top = 20.0
+offset_right = 520.0
+offset_bottom = 60.0
+text = "Level: 1"
+theme_override_font_sizes/font_size = 24
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+alignment = 2
+
+[node name="ComboLabel" type="Label" parent="UIManager"]
+offset_left = 20.0
+offset_top = 80.0
+offset_right = 520.0
+offset_bottom = 120.0
+text = ""
+theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(1, 0.84, 0, 1)
+alignment = 1
