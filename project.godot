@@ -1,0 +1,95 @@
+[gd_project]
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node2D",
+"class": &"GameManager",
+"language": &"GDScript",
+"path": "res://scripts/GameManager.gd"
+}, {
+"base": "Node2D",
+"class": &"Block",
+"language": &"GDScript",
+"path": "res://scripts/Block.gd"
+}, {
+"base": "Node",
+"class": &"UIManager",
+"language": &"GDScript",
+"path": "res://scripts/UIManager.gd"
+}]
+
+_global_script_class_icons={
+"Block": "",
+"GameManager": "",
+"UIManager": ""
+}
+
+[application]
+
+config/name="Zen Blocks Flow"
+config/description="An addictive minimalist puzzle game for mobile"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://assets/icon.svg"
+
+[debug]
+
+gd_script/warnings/unused_variable=1
+gd_script/warnings/unused_argument=1
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/handheld_mode=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep_height"
+
+[input]
+
+ui_accept={
+"deadzone": 0.5,
+"events": [Key( keycode=4194309 ), JoypadButton( device=0, button=0 )]
+}
+ui_select={
+"deadzone": 0.5,
+"events": [Key( keycode=32 )]
+}
+ui_cancel={
+"deadzone": 0.5,
+"events": [Key( keycode=4194305 )]
+}
+ui_focus_next={
+"deadzone": 0.5,
+"events": [Key( keycode=4194320 )]
+}
+ui_focus_prev={
+"deadzone": 0.5,
+"events": [Key( keycode=4194319 )]
+}
+ui_left={
+"deadzone": 0.5,
+"events": [Key( keycode=65 ), JoypadButton( device=0, button=14 )]
+}
+ui_right={
+"deadzone": 0.5,
+"events": [Key( keycode=68 ), JoypadButton( device=0, button=15 )]
+}
+ui_up={
+"deadzone": 0.5,
+"events": [Key( keycode=87 ), JoypadButton( device=0, button=12 )]
+}
+ui_down={
+"deadzone": 0.5,
+"events": [Key( keycode=83 ), JoypadButton( device=0, button=13 )]
+}
+
+[physics]
+
+2d/default_gravity=980.0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"
